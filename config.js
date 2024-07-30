@@ -17,6 +17,7 @@ module.exports = {
           storage: DATABASE_URL,
           logging: false,
         })
+    
       : new Sequelize(DATABASE_URL, {
           dialect: 'postgres',
           ssl: true,
